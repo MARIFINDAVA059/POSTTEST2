@@ -86,15 +86,17 @@ def cashier_interface():
       print("5. Exit")
       choice = input("Enter your choice: ")   # Kasir memilih program yang ingin dijalankan
 
-      if choice == '1':                       # Menampilkan orderan yang ada
+       if choice == '1':                       # Menampilkan orderan yang ada
          display_orders()
       elif choice == '2':                     # Menghitung tagihan yang ada
          calculate_bills()
       elif choice == '3':                     # Menghapus orderan yang sudah dibayarkan customer
          mark_orders_as_paid()
       elif choice == '4':                     # Menampilkan total penjualan Coffee Shop
-         display_total_bills() 
-      elif choice == '5':                     # Menghentikan program dan kembali ke tampilan awal Coffe Shop
+         display_total_bills()
+      elif choice == '5':                     # Mengupdate orderan customer
+         update_customer_order()
+      elif choice == '6':                     # Menghentikan program dan kembali ke tampilan awal Coffe Shop
          break
       else:
          print("Invalid choice. Please try again.") # Ketika menginput tidak sesuai (1/2/3/4/5)
