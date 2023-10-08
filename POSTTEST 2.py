@@ -83,7 +83,8 @@ def cashier_interface():
       print("2. Calculate Bills")
       print("3. Mark Orders as Paid")
       print("4. Total Transaction")
-      print("5. Exit")
+      print("5. Update Orderan")
+      print("6. Exit")
       choice = input("Enter your choice: ")   # Kasir memilih program yang ingin dijalankan
 
        if choice == '1':                       # Menampilkan orderan yang ada
