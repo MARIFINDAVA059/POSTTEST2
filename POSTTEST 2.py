@@ -21,6 +21,9 @@ menu = {
    "Matcha Latte":  35000 
 }
 
+def update_menu(new_coffee, price):
+   menu[new_coffee] = price
+
 # Inisialisasi dictionary untuk menyimpan pesanan customer dan catatan kasir.
 customer_orders = {}        # Function orderan customer
 cashier_records = []        # Function catatan kasir
@@ -61,8 +64,8 @@ def customer_interface():
       # Proses pembayaran
       total_bill = sum(menu[coffee] * quantity for coffee, quantity in customer_order.items()) # Perhitungan utk transaksi harga Coffee
       print(f"Your total bill is Rp. {total_bill:.2f}")                # Menampilkan total harga Coffee
-      payment = float(input("Enter the payment amount: "))          # Customer diminta menginput total uang yang dibayarkan
-      if payment >= total_bill:                                     # Jika customer menginput uang lebih dari harga, menampilkan kembalian
+      payment = float(input("Enter the payment amount: "))             # Customer diminta menginput total uang yang dibayarkan
+      if payment >= total_bill:                                        # Jika customer menginput uang lebih dari harga, menampilkan kembalian
          change = payment - total_bill
          print(f"Payment successful. Your change is Rp. {change:.2f}") # Menampilkan uang kembalian untuk customer
       else:
@@ -76,18 +79,19 @@ def cashier_interface():
       if username == cashier_username and password == cashier_password: # Mengecek apakah kasir menginput data yang benar
          break
       else:
-         print("Invalid credentials. Please try again.")                # Ketika kasir gagal login, program akan terus berulang
+         print("Invalid Data. Please try again.")                # Ketika kasir gagal login, program akan terus berulang
    while True:                                # Ketika login berhasil maka akan melanjutkan program
       print("Cashier Interface")              # Tampilan kasir
       print("1. View Orders")                
       print("2. Calculate Bills")
       print("3. Mark Orders as Paid")
       print("4. Total Transaction")
-      print("5. Update Orderan")
-      print("6. Exit")
+      print("5. Update orderan")
+      print("6. Menambah Menu Baru")
+      print("7. Exit")
       choice = input("Enter your choice: ")   # Kasir memilih program yang ingin dijalankan
 
-       if choice == '1':                       # Menampilkan orderan yang ada
+      if choice == '1':                       # Menampilkan orderan yang ada
          display_orders()
       elif choice == '2':                     # Menghitung tagihan yang ada
          calculate_bills()
@@ -97,7 +101,9 @@ def cashier_interface():
          display_total_bills()
       elif choice == '5':                     # Mengupdate orderan customer
          update_customer_order()
-      elif choice == '6':                     # Menghentikan program dan kembali ke tampilan awal Coffe Shop
+      elif choice == '6':                     # Menambahkan List menu dan harga Coffee
+         add_new_coffee()
+      elif choice == '7':                     # Menghentikan program dan kembali ke tampilan awal Coffe Shop
          break
       else:
          print("Invalid choice. Please try again.") # Ketika menginput tidak sesuai (1/2/3/4/5)
@@ -109,6 +115,16 @@ def display_orders():
       table.add_row([customer, order])
    print("Customer Orders")
    print(table)                                     # Menampilkan nama customer dan orderannya
+
+# Function untuk menambahkan Coffee baru pada menu
+def add_new_coffee():   
+   new_coffee = input("Enter the name of the new coffee: ")    # Meminta user untuk menambahkan nama Coffee baru
+   if new_coffee in menu:
+      print(f"{new_coffee} is already in the menu.")           # Jika Coffee sudah terdapat di menu maka akan muncul tampilan ini
+   else:
+      price = int(input(f"Enter the price of {new_coffee}: ")) # Meminta user menginput harga Coffee 
+      update_menu(new_coffee, price)            
+      print(f"{new_coffee} has been added to the menu with a price of Rp. {price:.2f}") 
 
 # Function untuk menghitung tagihan orderan
 def calculate_bills():
@@ -151,6 +167,8 @@ def display_total_bills():
    total_bills = sum(record[2] for record in cashier_records)     # Mengambil data orderan yang telah dicatat
    print(f"Total Coffee Shop Transaction : Rp. {total_bills:.2f}   Alhamdulillah :) ") # Menampilkan total transaksi Coffee Shop
 
+
+
 # Bagian utama program. ( tampilan awal program )
 def main_menu():
    while True:
@@ -160,7 +178,7 @@ def main_menu():
       menu.add_row(["2", "Cashier Interface"])
       menu.add_row(["3", "Exit"])
       print(menu)
-      choice = input("Enter your choice: ")                   # Menginput pilihan untuk menjalankan program
+      choice = input("Enter your choice: ")           # Menginput pilihan untuk menjalankan program
 
       if choice == '1':                               # Menjalankan program sebagai customer
          customer_interface()
@@ -172,5 +190,5 @@ def main_menu():
       else:
          print("Invalid choice. Please try again.")   # Ketika input user tidak sesuai (1/2/3)
 
-if __name__ == '__main__':    # Menjalankan Program Utama Coffee Shop 
+if __name__ == '__main__':    # Menjalankan Program Utama Coffee Shop menggunakan
    main_menu()
