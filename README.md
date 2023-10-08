@@ -4,6 +4,6 @@ POST TEST 2 (PRAKTIKUM) MUHAMMAD ARIFIN DAVA 2309116059- SISTEM INFORMASI-B 23
 
 
 
-
-![Uploading image.png…]()
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/a4561046-82db-4ea5-9bde-69abff407871)
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/fed5950d-bac9-44e0-a582-59b55aa8ccae)
 
