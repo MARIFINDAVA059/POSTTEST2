@@ -112,7 +112,64 @@ exit program.. Ketika user memilih untuk kasir interface, akan muncul tampilan l
 username untuk kasir sendiri adalah : ( untuk username dan password harus sesuai, jika salah maka akan terus looping di bagian login )
 username : dapa ( nama saya )
 password : 059  ( nim saya )
-jika telah berhasil login maka akan muncul tampilan
+jika telah berhasil login maka akan muncul tampilan kasir interface, kasir dapat memilih 6 fitur kasir yang tertera pada output
+kasir diminta input antara (1/2/3/4/5/6)
+
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/d126a7c8-4c25-46ee-a440-e1f997140641)
+Berikut tampilan ketika login salah karena username dan password tidak sesuai, maka akan terus looping hingga username dan password benar
+
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/a662e350-6110-4d4d-a73e-46c0a3fa9e00)
+Ketika user menginput "1" maka akan menampilkan (CRUD = READ) orderan yang telah diorder beserta jumlah orderannya, dan akan kembali looping 
+ke tampilan awal kasir untuk memilih fitur
+( KETIKA TIDAK ADA ORDERAN MAKA HANYA AKAN MUNCUL PRETTYTABLE TANPA ISI TABEL )
+
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/21882e0c-bc09-4219-a11e-b02dfda98562)
+Ketika user menginput "2" maka akan melakukan penghitungan semua orderan yang ada, yang nantinya digunakan pada bagian total transaction
+fitur ini menambahkan hitungan tagihan menggunakan create yaitu append ( CRUD = CREATE )
+dan akan kembali looping ke tampilan awal kasir untuk memilih fitur 
+
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/79ad01b8-e1c8-4c88-a104-3d9fd5c16216)
+Ketika user menginput "3" maka akan muncul tampilan untuk menginput nama customer yang ingin ditandain bahwa customer telah membayar (CRUD = DELETE),
+setelah nama customer diinput maka akan muncul tampilan (nama customer) order telah terbayar, dan akan kembali looping ke tampilan awal kasir untuk memilih fitur
+
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/bb589f93-43b4-4f28-bc24-32f46d22aa21)
+Setelah user menandai nama customer yang telah membayar, maka orderan customer tersebut tidak akan ditampilkan lagi, dapat di cek menggunakan section "1" dan akan tampil bahwa
+orderan dengan nama customer "dary" yang awalnya ada, sekarang sudah tidak ada
+
+
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/ea515a1f-fa7d-439d-b33e-4a1479b89d5c)
+Ketika user menginput nama customer yang salah akan muncul tampilan, customer tidak ada, silahkan cek kembali nama customer, dan akan kembali looping ke tampilan awal kasir untuk memilih fitur
+
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/3e8bb879-8b4d-4345-a3f9-40c4d61c0d2b)
+Ketika user menginput "4" maka akan muncul tampilan total transaksi yang ada, yang telah dihitung pada function "2" yaitu perhitungan orderan
+
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/243d75d0-1fad-467b-888f-f727aa9a2793)
+Ketika user menginput "5" maka akan muncul tampilan untuk menginput nama customer yang ingin di update orderannya ( CRUD = UPDATE ), akan muncul tampilan orderan customer tersebut,
+user diminta untuk menginput nama coffee yang ingin diedit, jika nama coffee sesuai akan muncul pilihan input jumlah orderan yang ingin diganti seperti contoh diatas, dan dapat di cek pada section "1" untuk mengecek jumlah orderan setelah diubah
+
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/48576a74-2888-4029-a36c-30ce5dc7f9ff)
+Ketika orderan tidak ada dengan menggunakan section "3" maka pada section "1" tidak ada isi orderan pada tabel
+
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/6b64796a-f3be-466b-8962-d7e6975ca88c)
+
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/6d14356d-54ed-4fd1-84bb-a40d9d33e71c)
+milih 4
+
+
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/4f62b1e1-6bf0-4e3f-a0e6-c597e8cac555)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
