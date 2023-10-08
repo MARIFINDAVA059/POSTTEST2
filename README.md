@@ -145,18 +145,23 @@ Ketika user menginput "4" maka akan muncul tampilan total transaksi yang ada, ya
 
 ![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/243d75d0-1fad-467b-888f-f727aa9a2793)
 Ketika user menginput "5" maka akan muncul tampilan untuk menginput nama customer yang ingin di update orderannya ( CRUD = UPDATE ), akan muncul tampilan orderan customer tersebut,
-user diminta untuk menginput nama coffee yang ingin diedit, jika nama coffee sesuai akan muncul pilihan input jumlah orderan yang ingin diganti seperti contoh diatas, dan dapat di cek pada section "1" untuk mengecek jumlah orderan setelah diubah
+user diminta untuk menginput nama coffee yang ingin diedit, jika nama coffee sesuai akan muncul pilihan input jumlah orderan yang ingin diganti seperti contoh diatas
+
+![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/48c7412a-e903-462f-acfb-09a51dcf561a)
+dapat di cek pada section "1" untuk mengecek jumlah orderan setelah diubah, yang awalnya Mocha : 3 dan Espresso : 2, menjadi Mocha : 4 dan Espresso : 4
 
 ![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/48576a74-2888-4029-a36c-30ce5dc7f9ff)
-Ketika orderan tidak ada dengan menggunakan section "3" maka pada section "1" tidak ada isi orderan pada tabel
+Ketika orderan dihapus dengan menggunakan section "3" maka pada section "1" tidak ada isi orderan pada tabel
 
 ![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/6b64796a-f3be-466b-8962-d7e6975ca88c)
+Ketika memilih "6" pada section, maka akan keluar dari section kasir dan kembali ke tampilan awal menggunakan break
 
 ![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/6d14356d-54ed-4fd1-84bb-a40d9d33e71c)
-milih 4
+ketika memilih section "4" maka akan muncul tampilan, pilihan salah, coba lagi.
 
 
 ![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/4f62b1e1-6bf0-4e3f-a0e6-c597e8cac555)
+Ketika user memilih section "3" maka akan keluar dari program menggunakan break , akan muncul tampilan" Terima kasih telah berkunjung ke RumahKita CoffeShop ", dan program berhenti
 
 
 
