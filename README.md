@@ -23,46 +23,47 @@ Program sistem manajemen Coffee Shop dengan menu customer (Customer Interface) d
 Berikut adalah penjelasan rinci dari program tersebut:
 
 Import Library:
-
 Program mengimpor modul PrettyTable untuk membuat tampilan tabel yang rapi dan simpel.
+
 Menu Coffee:
-
 Program menentukan menu kopi beserta harga dari tiap minuman menggunakan dictionary dengan nama menu.
+
 Inisialisasi Dictionary:
+Program menginisialisasi dua dictionary: customer_orders untuk menyimpan orderan customer dan cashier_records untuk mencatat orderan yang sudah dibayar oleh customer.
 
-Program menginisialisasi dua dictionary: customer_orders untuk menyimpan pesanan pelanggan dan cashier_records untuk mencatat pesanan yang sudah dibayar oleh pelanggan.
 Username dan Password Kasir:
+Terdapat username (cashier_username) dan password (cashier_password) yang digunakan untuk login kasir. Ini digunakan untuk memvalidasi login saat kasir mengakses tampilan kasir.
 
-Terdapat username (cashier_username) dan password (cashier_password) yang digunakan untuk login kasir. Ini digunakan untuk memvalidasi login saat kasir mengakses antarmuka kasir.
 Customer Interface:
+Function customer_interface memungkinkan customer untuk melihat daftar menu, mengisi orderan mereka, dan melakukan pembayaran. Pelanggan dapat memesan beberapa kopi sekaligus dan menginput jumlahnya.
+Terdapat juga tampilan untuk mengisi uang yang akan dibayar dan juga uang kembalian setelah pembayaran.
 
-Fungsi customer_interface memungkinkan pelanggan untuk melihat daftar menu, mengisi pesanan mereka, dan melakukan pembayaran. Pelanggan dapat memesan beberapa kopi sekaligus dan menginput jumlahnya.
 Cashier Interface:
+Function cashier_interface digunakan oleh kasir untuk mengakses tampilan kasir. Kasir akan diminta untuk menginput username dan password sebelum dapat mengakses tampilan kasir.
+tampilan kasir menawarkan beberapa opsi, termasuk melihat orderan customer, menghitung tagihan, menandai orderan sebagai sudah dibayar, menampilkan total transaksi Coffee Shop, mengupdate orderan customer, dan keluar dari tampilan kasir.
 
-Fungsi cashier_interface digunakan oleh kasir untuk mengakses antarmuka kasir. Kasir akan diminta untuk menginput username dan password sebelum dapat mengakses antarmuka kasir.
-Antarmuka kasir menawarkan beberapa opsi, termasuk melihat pesanan pelanggan, menghitung tagihan, menandai pesanan sebagai sudah dibayar, menampilkan total transaksi Coffee Shop, mengupdate pesanan pelanggan, dan keluar dari antarmuka kasir.
 Display Orders:
+Function display_orders menampilkan orderan customer beserta nama customer ke dalam tabel menggunakan PrettyTable. Ini memungkinkan kasir untuk melihat orderan yang ada.
 
-Fungsi display_orders menampilkan pesanan pelanggan beserta nama pelanggan ke dalam tabel menggunakan PrettyTable. Ini memungkinkan kasir untuk melihat pesanan yang ada.
 Calculate Bills:
+Function calculate_bills menghitung total tagihan untuk setiap orderan customer dan mencatatnya ke dalam cashier_records.
 
-Fungsi calculate_bills menghitung total tagihan untuk setiap pesanan pelanggan dan mencatatnya ke dalam cashier_records.
 Mark Orders as Paid:
+Function mark_orders_as_paid memungkinkan kasir untuk menandai orderan customer sebagai sudah dibayar dan menghapusnya dari daftar orderan.
 
-Fungsi mark_orders_as_paid memungkinkan kasir untuk menandai pesanan pelanggan sebagai sudah dibayar dan menghapusnya dari daftar pesanan aktif.
 Update Customer Order:
+Function update_customer_order memungkinkan kasir untuk memperbarui orderan customer dengan menghapus orderan lama dan menggantinya dengan orderan baru.
 
-Fungsi update_customer_order memungkinkan kasir untuk memperbarui pesanan pelanggan dengan menghapus pesanan lama dan menggantinya dengan pesanan baru.
 Display Total Bills:
+Function display_total_bills menghitung total transaksi seluruh orderan yang sudah dibayar dan menampilkannya.
 
-Fungsi display_total_bills menghitung total transaksi seluruh pesanan yang sudah dibayar dan menampilkannya.
 Main Menu:
+Function main_menu adalah fungsi utama program yang menampilkan menu utama Coffee Shop dengan opsi untuk memilih tampilan customer, tampilan kasir, atau keluar dari program.
 
-Fungsi main_menu adalah fungsi utama program yang menampilkan menu utama Coffee Shop dengan opsi untuk memilih antarmuka pelanggan, antarmuka kasir, atau keluar dari program.
-Penanganan Input:
-
+Penanganan Input salah :
 Program melakukan penanganan input yang salah dengan menampilkan pesan kesalahan dan memberikan kesempatan untuk mencoba lagi.
-Program ini mencakup konsep dasar pemrograman dan membuat alur kerja yang cukup intuitif antara pelanggan dan kasir. Program ini memungkinkan pelanggan untuk memesan kopi dan kasir untuk mengelola pesanan dan transaksi secara efisien.
+Program ini mencakup konsep dasar pemrograman dan membuat alur kerja yang cukup intuitif antara customer dan kasir. Program ini memungkinkan customer untuk memesan kopi dan kasir untuk mengelola orderan dan transaksi secara efisien
+
 
 ![image](https://github.com/MARIFINDAVA059/POSTTEST2/assets/147223413/a96078cf-c8df-412d-bf85-c065b29e7b62)
 note : Program menggunakan bahasa Inggris
