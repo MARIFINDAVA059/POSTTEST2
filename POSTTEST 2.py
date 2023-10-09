@@ -87,8 +87,7 @@ def cashier_interface():
       print("3. Mark Orders as Paid")
       print("4. Total Transaction")
       print("5. Update orderan")
-      print("6. Menambah Menu Baru")
-      print("7. Exit")
+      print("6. Exit")
       choice = input("Enter your choice: ")   # Kasir memilih program yang ingin dijalankan
 
       if choice == '1':                       # Menampilkan orderan yang ada
@@ -101,9 +100,7 @@ def cashier_interface():
          display_total_bills()
       elif choice == '5':                     # Mengupdate orderan customer
          update_customer_order()
-      elif choice == '6':                     # Menambahkan List menu dan harga Coffee
-         add_new_coffee()
-      elif choice == '7':                     # Menghentikan program dan kembali ke tampilan awal Coffe Shop
+      elif choice == '6':                     # Menghentikan program dan kembali ke tampilan awal Coffe Shop
          break
       else:
          print("Invalid choice. Please try again.") # Ketika menginput tidak sesuai (1/2/3/4/5)
@@ -115,16 +112,6 @@ def display_orders():
       table.add_row([customer, order])
    print("Customer Orders")
    print(table)                                     # Menampilkan nama customer dan orderannya
-
-# Function untuk menambahkan Coffee baru pada menu
-def add_new_coffee():   
-   new_coffee = input("Enter the name of the new coffee: ")    # Meminta user untuk menambahkan nama Coffee baru
-   if new_coffee in menu:
-      print(f"{new_coffee} is already in the menu.")           # Jika Coffee sudah terdapat di menu maka akan muncul tampilan ini
-   else:
-      price = int(input(f"Enter the price of {new_coffee}: ")) # Meminta user menginput harga Coffee 
-      update_menu(new_coffee, price)            
-      print(f"{new_coffee} has been added to the menu with a price of Rp. {price:.2f}") 
 
 # Function untuk menghitung tagihan orderan
 def calculate_bills():
