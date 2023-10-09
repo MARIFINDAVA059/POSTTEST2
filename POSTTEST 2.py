@@ -4,7 +4,7 @@ NIM      : 2309116059
 KElAS    : SISTEM INFORMASI-B  (23)
 
 POSTTEST 2
-TEMA     : Coffee Shop  ( RumahKita Coffee Shp[] )
+TEMA     : Coffee Shop  ( RumahKita Coffee Shop )
 """
 
 # Import library PrettyTable untuk membuat tabel yang rapi dan simpel.
