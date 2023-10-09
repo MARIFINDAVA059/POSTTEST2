@@ -21,9 +21,6 @@ menu = {
    "Matcha Latte":  35000 
 }
 
-def update_menu(new_coffee, price):
-   menu[new_coffee] = price
-
 # Inisialisasi dictionary untuk menyimpan pesanan customer dan catatan kasir.
 customer_orders = {}        # Function orderan customer
 cashier_records = []        # Function catatan kasir
